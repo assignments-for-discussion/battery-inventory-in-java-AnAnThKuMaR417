@@ -60,13 +60,13 @@ public class Main {
     //test2
     System.out.println("Counting batteries by SoH...\n");
     //test data with present capacities
-    int[] presentCapacities = {114, 111, 180, 89, -92, 0};
+    int[] presentCapacitiesTest = {114, 111, 180, 89, -92, 0};
     //count batteries by health classification
-    CountsBySoH counts = countBatteriesByHealth(presentCapacities);
+    CountsBySoH countsTest = countBatteriesByHealth(presentCapacitiesTest);
     //assertions to validate the results
-    assert(counts.healthy == 2);
-    assert(counts.exchange == 1);
-    assert(counts.failed == 1);
+    assert(countsTest.healthy == 2);
+    assert(countsTest.exchange == 1);
+    assert(countsTest.failed == 1);
     System.out.println("Done counting :)\n");
   }
 
